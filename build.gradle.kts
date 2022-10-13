@@ -29,8 +29,20 @@ dependencies {
     implementation("org.drools:drools-core:7.73.0.Final")
     compileOnly("org.kie:kie-api:7.73.0.Final")
     testImplementation ("org.junit.jupiter:junit-jupiter:5.9.0")
-
     testImplementation("org.assertj:assertj-core:3.23.1")
+
+    // cucumber
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    testImplementation("io.cucumber:cucumber-java:7.8.1")
+    testImplementation("io.cucumber:cucumber-spring:7.8.1")
+    testImplementation("io.cucumber:cucumber-junit-platform-engine:7.8.1")
+// https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api
+    testImplementation("org.junit.platform:junit-platform-suite-api:1.9.1")
+
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation("org.slf4j:slf4j-api:2.0.3")
+
 }
 
 dependencyManagement {
