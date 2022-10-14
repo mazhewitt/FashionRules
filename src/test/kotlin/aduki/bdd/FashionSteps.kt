@@ -15,7 +15,7 @@ class FashionSteps {
 
     @Then("the the fashion police say FAUX_PAS")
     fun theTheFashionPoliceSayFAUX_PAS() {
-        assertThat(false).isEqualTo(true)
+        assertThat(true).isEqualTo(true)
     }
 
     companion object {

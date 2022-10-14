@@ -8,6 +8,6 @@ import org.junit.platform.suite.api.Suite
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("aduki/bdd/fashion_rules.feature")
+@SelectClasspathResource("/aduki/bdd")
 @ConfigurationParameter(key = Constants.GLUE_PROPERTY_NAME, value = "aduki.bdd")
 public class CucumberRunner
