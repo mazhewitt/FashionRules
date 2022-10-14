@@ -15,7 +15,7 @@ class FashionRulesService(private val kieContainer: KieContainer) {
         for (item in fashionRequest) {
             kieSession.insert(item)
         }
-        val verdict = FashionVerdictResult(FashionVerdict.UNRATED, "")
+        val verdict = FashionVerdictResult(FashionVerdict.IT_WORKS, "")
         kieSession.insert(verdict)
         kieSession.fireAllRules()
         kieSession.dispose()

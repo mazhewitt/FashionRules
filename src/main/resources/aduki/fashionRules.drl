@@ -1,0 +1,14 @@
+package aduki
+
+import aduki.model.FashionItem
+import aduki.model.FashionVerdictResult
+import aduki.model.FashionVerdict
+
+rule "Handbag and Shows should not be different colours"
+    when
+        i1 : FashionItem(itemType == "shoes")
+        i2 : FashionItem(itemType == "handbag", i1.itemColour != itemColour)
+        v : FashionVerdictResult()
+    then
+    v.setVerdict(FashionVerdict.FAUX_PAS);
+end

@@ -41,7 +41,11 @@ dependencies {
     testImplementation("io.cucumber:cucumber-junit-platform-engine:7.8.1")
 // JUnit 5
     testImplementation("org.junit.platform:junit-platform-suite:1.8.2")
-    implementation("org.slf4j:slf4j-api:2.0.3")
+
+
+    testImplementation("org.slf4j:slf4j-api:2.0.3")
+    testImplementation("org.slf4j:slf4j-simple:2.0.3")
+
     testImplementation("org.assertj:assertj-core:3.23.1")
 }
 
